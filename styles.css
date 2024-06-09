@@ -1,0 +1,732 @@
+:root {
+    --cor-fundo: #F6F1ED;
+    --branco: #fff;
+    --preto: #000;
+    --verde-escuro: #1B1E18;
+    --verde-escuro-2: #121410;
+    --cinza-verde: #83908F;
+    --vermelho: #881212;
+}
+
+@font-face {
+    font-family: 'Older Dictator';
+    src: url('./_fontes/Older_Dictator.otf') format('opentype');
+}
+
+body {
+    background: var(--cor-fundo);
+    font-family: "Karma", serif;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 1920px;
+    height: 1080px;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+
+/*
+=================================================================
+*
+* ESTILOS NAVIGATION
+*
+=================================================================
+*/
+
+.Navigation {
+    z-index: 999;
+}
+
+.Navigation-itens {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.items {
+    margin-left: 700px;
+    left: 754px;
+    top: 56px;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 48px;
+    display: inline-flex;
+}
+
+.items p,
+a {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--preto);
+    text-decoration: none;
+    overflow: hidden;
+    word-wrap: break-word;
+    white-space: nowrap;
+}
+
+.items p:hover,
+a:hover {
+    color: var(--branco);
+}
+
+.button-navigation {
+    padding-right: 25px;
+    padding-left: 10px;
+    background: var(--verde-escuro);
+    border-radius: 8px;
+}
+
+.button-navigation div.ComprarAgora,
+a#ComprarAgora {
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: -4px;
+}
+
+.nome-navigation {
+    left: 192px;
+    top: 67px;
+    position: absolute;
+    color: white;
+    font-size: 20px;
+    font-family: Karma;
+    font-weight: 500;
+    line-height: 30px;
+    word-wrap: break-word;
+}
+
+.cruz {
+    width: 54px;
+    height: 54px;
+    left: 112px;
+    top: 52px;
+    position: absolute;
+}
+
+/*
+=================================================================
+*
+* ESTILOS MAIN BANNER
+*
+=================================================================
+*/
+
+.main {
+    width: 1960px;
+    height: 1031px;
+    left: 0px;
+    top: -195px;
+    position: absolute;
+}
+
+.background {
+    width: 1960px;
+    height: 1031px;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+}
+
+.title {
+    font-family: 'Older Dictator', sans-serif;
+    width: 842px;
+    left: 113px;
+    top: 394px;
+    position: absolute;
+    color: white;
+    font-size: 90px;
+    line-height: 77.25px;
+    word-wrap: break-word;
+}
+
+.description {
+    width: 581px;
+    left: 113px;
+    top: 557px;
+    position: absolute;
+    color: white;
+    font-size: 18px;
+    font-family: Karma;
+    font-weight: 400;
+    line-height: 27px;
+    word-wrap: break-word;
+}
+
+.button {
+    width: 300px;
+    height: 48px;
+    padding-top: 14px;
+    padding-bottom: 10px;
+    padding-left: 24px;
+    padding-right: 24px;
+    left: 113px;
+    top: 905px;
+    position: absolute;
+    background: var(--vermelho);
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+    white-space: nowrap;
+}
+
+.button-text {
+    color: white;
+    font-size: 16px;
+    font-family: Karma;
+    font-weight: 500;
+    line-height: 24px;
+    margin-right: 75px;
+}
+
+.mockup {
+    width: 684px;
+    height: 730px;
+    left: 732px;
+    top: 295px;
+    position: absolute;
+}
+
+/*
+=================================================================
+*
+* ESTILOS STICKERS
+*
+=================================================================
+*/
+
+.stickers {
+    top: 1120px;
+    width: 100%;
+    max-width: 86%;
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.header {
+    width: 100%;
+    text-align: center;
+    color: #1B1E18;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.sticker-grid {
+    display: grid;
+    justify-items: center;
+    align-items: baseline;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.stickers-text {
+    max-width: 245px;
+    text-align: center;
+    color: #1B1E18;
+    font-size: 16px;
+    font-family: Karma;
+    font-weight: 400;
+    line-height: 24px;
+    word-wrap: break-word;
+}
+
+
+.sticker {
+    width: 256px;
+    margin-bottom: -40px;
+}
+
+
+/*
+=================================================================
+*
+* ESTILOS ONDE COMPRAR
+*
+=================================================================
+*/
+
+.OndeComprar {
+    align-items: center;
+    justify-content: center;
+    top: 1800px;
+    max-width: 1500px;
+    width: 88%;
+    height: 840px;
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.box-bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: var(--verde-escuro);
+    border-radius: 18px;
+}
+
+.OndeComprar p {
+    z-index: 3;
+    margin-top: 43px;
+    position: absolute;
+    text-align: center;
+    color: var(--cinza-verde);
+    font-size: 42px;
+    font-weight: 700;
+}
+
+.OndeComprar-title {
+    display: grid;
+    justify-items: center;
+    width: 100%;
+}
+
+.OndeComprar-container {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+    gap: 20px;
+    position: relative;
+    height: auto;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.img-ebook {
+    width: 90%;
+}
+
+#img-ebook-01{
+    width: 300px;
+    margin-top: -10px;
+}
+
+#img-ebook-02{
+    width: 250px;
+}
+
+#img-ebook-03{
+    width: 220px;
+}
+
+#img-ebook-04{
+    width: 220px;
+}
+
+.produto-container {
+    margin-top: 130px;
+    width: 290px;
+    height: 650px;
+    background: var(--verde-escuro-2);
+    text-align: center;
+    border-radius: 19px;
+}
+
+.cruz-02 img {
+    margin-top: 30px;
+    width: 100%;
+    width: 41px;
+    height: 41px;
+}
+
+.produto-titulo {
+    z-index: 2;
+    margin-top: 10px;
+    text-align: center;
+    color: var(--cinza-verde);
+    font-size: 36px;
+    font-weight: 700;
+    word-wrap: break-word;
+    text-transform: uppercase;
+}
+
+.produto-valor {
+    text-align: center;
+    color: var(--branco);
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: -40px;
+}
+
+#produto-valor-02 {
+    margin-top: -15px;
+    color: var(--branco);
+    font-size: 30px;
+}
+
+.produto-complemento {
+    z-index: 4;
+    text-align: center;
+    color: var(--branco);
+    font-size: 20px;
+    line-height: 25px;
+    margin-top: -20px;
+    margin-bottom: 20px;
+}
+
+#produto-complemento-02 {
+    margin-top: -15px;
+    color: var(--branco);
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.produto-botao {
+    color: var(--branco);
+    background: var(--vermelho);
+    margin-top: 20px;
+    margin-bottom: 30px;
+    max-width: 200px;
+    height: 70px;
+    border-radius: 10px;
+    font-weight: 700;
+    margin-left: 45px;
+
+}
+
+.produto-botao p,
+a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0px auto;
+    padding: 0px;
+    margin-left: 13px;
+    margin-bottom: 15px;
+    line-height: 70px;
+}
+
+
+/*
+=================================================================
+*
+* ESTILOS RELATOS
+*
+=================================================================
+*/
+
+.relatos {
+    top: 2620px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.relatos-texto {
+    position: relative;
+    top: -90px;
+    display: inline-block;
+}
+
+.grid-relatos {
+    position: relative;
+    height: auto;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 60px;
+}
+
+.relatos_texto {
+    width: 1004px;
+    left: 60px;
+    top: 8px;
+    position: absolute;
+    text-align: center;
+    color: #1B1E18;
+    font-size: 36px;
+    font-family: Karma;
+    font-weight: 700;
+    line-height: 43.45px;
+    word-wrap: break-word;
+    text-align: center;
+}
+
+.relatos_cruz-01 {
+    left: 155px;
+    top: -55px;
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+}
+
+.relatos_cruz-02 {
+    left: 910px;
+    top: -55px;
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+}
+
+.vector {
+    width: 53px;
+    height: 53px;
+}
+
+.relatos-imagem {
+    border-radius: 15px;
+    width: 342px;
+    height: 519px;
+}
+
+
+
+/*
+=================================================================
+*
+* ESTILOS ONDE COMPRAR
+*
+=================================================================
+*/
+
+.links-ecommerce {
+    top: 3280px;
+    background: var(--verde-escuro);
+    border-radius: 18px;
+    max-width: 1300px;
+    width: 90%;
+    height: 501px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);    
+}
+
+.links-ecommerce-text{
+    position: relative;
+    max-width: 500px;
+    left: 700px;
+    margin-top: 80px;
+    color: var(--branco);
+    font-family: 'Karma', sans-serif;
+    word-wrap: break-word;
+}
+
+.links-ecommerce-title {
+    font-size: 47px;
+    font-weight: 600;
+    line-height: 51.70px;
+}
+
+.links-ecommerce-subtitle {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.links-container{
+    position: relative;
+    margin-left: 684px;
+    margin-right: 40px;
+    height: auto;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;    
+}
+
+.button_ecommerce {
+    background: var(--vermelho);
+    width: 180px;
+    height: 40px;
+    border-radius: 8px;
+    align-items: center;
+    padding: 14px 24px;
+    overflow: hidden;
+}
+
+.button_ecommerce-text {
+    position: relative;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    word-wrap: break-word;
+    bottom: 29px;
+}
+
+.ebook1 {
+    width: 730px;
+    position: absolute;
+    left: -60px;
+    top: -140px;
+}
+
+/*
+=================================================================
+*
+* ESTILOS ONDE FALE COMIGO
+*
+=================================================================
+*/
+
+.link-direto {
+    top: 3900px;
+    max-width: 1200px;
+    width: 90%;
+    height: 500px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);    
+}
+
+.link-direto-group {
+    width: 100%;
+    height: 100%;
+
+}
+
+.link-direto-description {
+    max-width: 680px;
+    position: absolute;
+    top: 36px;
+}
+
+.link-direto-description .highlight {
+    color: #121410;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 48px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.link-direto-description span {
+    color: #121410;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.author {
+    width: 401px;
+    position: absolute;
+    left: 781px;
+    top: 460px;
+    text-align: center;
+    color: var(--verde-escuro);
+}
+
+.author-name {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+.author-title {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.link-direto-button {
+    width: 263px;
+    height: 52px;
+    position: absolute;
+    left: -15px;
+    top: 460px;
+    background: var(--vermelho);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.link-direto-button-text {
+    color: var(--branco);
+    font-size: 16px;
+    font-family: 'Karma', sans-serif;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+}
+
+.author-image {
+    width: 412px;
+    height: 412px;
+    position: absolute;
+    left: 776px;
+    top: 30px;
+    border-radius: 50%;
+}
+
+/*
+=================================================================
+*
+* ESTILOS FOOTER
+*
+=================================================================
+*/
+
+.footer {
+    position: absolute;
+    max-width: 100%;
+    width: 100%;
+    height: 171px;
+    top: 4370px;
+    left: 50%;
+    transform: translate(-50%, -50%);    
+    background: white;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.footer-title {
+    width: 100%;
+    margin: 10px;
+    text-align: center;
+    color: var(--verde-escuro);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.97px;
+}
+
+.footer-credit {
+    width: 100%;
+    margin: 10px;
+    text-align: center;
+    margin: 20px;
+    color: var(--verde-escuro);
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 14px;
+}
+
+.social-icons {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    margin-top: 40px;
+    position: relative;
+    max-width: 5%;
+    width: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);   
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+}
+
+.icon-catarse {
+    width: 115px;
+    height: 117px;
+    position: absolute;
+    right: 70px;
+    top: 45px;
+}
