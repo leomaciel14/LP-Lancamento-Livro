@@ -40,11 +40,11 @@ Você pode testar o site acessando o link abaixo:
 
 1. Clone o repositório:
     ```sh
-    git clone https://github.com/seu-usuario/nome-do-repositorio.git
+    git clone https://github.com/leomaciel14/LP-Lancamento-Livro.git
     ```
 2. Navegue até o diretório do projeto:
     ```sh
-    cd nome-do-repositorio
+    cd LP-Lancamento-Livro
     ```
 3. Abra o arquivo `index.html` no seu navegador.
 
