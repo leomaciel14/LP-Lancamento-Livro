@@ -14,30 +14,30 @@
 
 <body>
     <div class="Navigation">
-        <div class="Navigation-itens">
+        <div class="logo-autora">
             <div class="cruz">
                 <img src="./_assets/cruz-03.svg" alt="Cruz">
             </div>
-
             <div class="nome-navigation">Ana Clara Galli</div>
 
+        </div>
+        <div class="Navigation-itens">
             <div class="items">
-                <p><a href="" target="_blank">Kits</a></p>
-                <p><a href="" target="_blank">Onde Comprar</a></p>
-                <p><a href="" target="_blank">Fale Comigo</a></p>
+                <p><a href="#" id="linkKits">Kits</a></p>
+                <p><a href="#" id="linkOndeComprar">Onde Comprar</a></p>
+                <p><a href="#" id="linkFaleComigo">Fale Comigo</a></p>
                 <div class="button-navigation">
                     <div class="ComprarAgora">
-                        <a id="ComprarAgora" href="" target="_blank">Comprar Agora</a>
+                        <a id="ComprarAgora" href="https://www.catarse.me/rduvng" target="_blank">Comprar Agora</a>
                     </div>
                 </div>
             </div>
         </div>
-
     </div>
 
     <div class="main">
-        <img class="background" src="./_assets/background-2.jpg" alt="Background">
-        <div class="title">Relatos de um<br>Vampiro na Guerra</div>
+        <div class="background" alt="Background"></div>
+        <h1 class="title">Relatos de um<br>Vampiro na Guerra</h1>
         <p class="description">
             Hermina, uma jovem obscurecida pela monotonia de sua vida, tem sua existência transformada ao se deparar com
             um encontro extraordinário. Em uma história que ecoa a bravura de Mulan, ela é lançada em um turbilhão de
@@ -46,9 +46,12 @@
             irreversível. Enquanto tenta esconder seu verdadeiro eu e enfrenta um mito que se torna realidade, ela se vê
             obrigada a escolher entre abandonar quem era ou abraçar cada parte de si mesma.
         </p>
-        <div class="button">
-            <div class="button-text">Leia os primeiros capítulos de graça!</div>
-        </div>
+        <a target="_blank"
+            href="https://file.notion.so/f/f/96f8f21a-0e81-4969-b007-de2e8727f07d/06a50b30-a4ba-469c-afc7-b3bb5440999f/Relatos_de_um_Vampiro_na_Guerra_-_Primeiros_Captulos.pdf?id=96ed551a-6dac-4dc2-99c9-85df2bbe0637&table=block&spaceId=96f8f21a-0e81-4969-b007-de2e8727f07d&expirationTimestamp=1718136000000&signature=hkt9Rig8lhAQlvUIzqYlqOtvt6ACQ4USLDrP_qGbI7U&downloadName=Relatos+de+um+Vampiro+na+Guerra+-+Primeiros+Cap%C3%ADtulos.pdf">
+            <div class="button-main">
+                <div class="button-main-text">Leia os primeiros capítulos de graça!</div>
+            </div>
+        </a>
         <img class="mockup" src="./_assets/mockup-leve-1.png" alt="Mockup do Livro">
     </div>
 
@@ -85,9 +88,10 @@
 
     </div>
 
-    <div class="OndeComprar">
+    <div id="kits" class="OndeComprar">
 
         <div class="box-bg"></div>
+        <div class="box-bg-texture"></div>
 
         <div class="OndeComprar-title">
             <p>Opções de compra</p>
@@ -97,21 +101,22 @@
 
             <div class="produto-container">
                 <div class="cruz-02">
-                    <img src="./_assets/cruz-02.svg" alt="Cruz">
+                    <img src="./_assets/cruz-01.svg" alt="Cruz">
                 </div>
                 <div class="produto-titulo">E-BOOK</div>
-                <img class="img-ebook"  id="img-ebook-01" src="./_assets/ebook-1-1.png" />
-                <div class="produto-valor">R$18</div>
+                <img class="img-ebook" id="img-ebook-01" src="./_assets/kit-01.png" />
+                <div id="preco-01" class="produto-valor">R$18</div>
                 <div class="produto-complemento">envio imediato<br />(contate por DM)</div>
                 <div class="produto-botao">
-                    <p><a href="http://" target="_blank" rel="noopener noreferrer">COMPRE AGORA</p>
+                    <p><a href="https://www.catarse.me/rduvng" target="_blank" rel="noopener noreferrer">COMPRE AGORA
+                    </p>
                 </div>
                 </a>
             </div>
 
             <div class="produto-container">
                 <div class="cruz-02">
-                    <img src="./_assets/cruz-02.svg" alt="Cruz">
+                    <img src="./_assets/cruz-01.svg" alt="Cruz">
                 </div>
                 <div class="produto-titulo">livro físico</div>
 
@@ -121,39 +126,42 @@
                 <div id="produto-valor-02" class="produto-valor">R$60 + frete</div>
                 <div id="produto-complemento-02" class="produto-complemento">outras regiões</div>
                 <div class="produto-botao">
-                    <p><a href="http://" target="_blank" rel="noopener noreferrer">COMPRE AGORA</a></p>
+                    <p><a href="https://www.catarse.me/rduvng" target="_blank" rel="noopener noreferrer">COMPRE
+                            AGORA</a></p>
                 </div>
             </div>
 
             <div class="produto-container">
                 <div class="cruz-02">
-                    <img src="./_assets/cruz-02.svg" alt="Cruz">
+                    <img src="./_assets/cruz-01.svg" alt="Cruz">
                 </div>
                 <div class="produto-titulo">kit kétszy</div>
 
-                <img class="img-ebook"  id="img-ebook-03" src="./_assets/kit-03.png" />
+                <img class="img-ebook" id="img-ebook-03" src="./_assets/kit-03.png" />
                 <div class="produto-valor">R$70</div>
                 <div class="produto-complemento">Porto Alegre</div>
                 <div id="produto-valor-02" class="produto-valor">R$70 + frete</div>
                 <div id="produto-complemento-02" class="produto-complemento">outras regiões</div>
                 <div class="produto-botao">
-                    <p><a href="http://" target="_blank" rel="noopener noreferrer">COMPRE AGORA</a></p>
+                    <p><a href="https://www.catarse.me/rduvng" target="_blank" rel="noopener noreferrer">COMPRE
+                            AGORA</a></p>
                 </div>
             </div>
 
             <div class="produto-container">
                 <div class="cruz-02">
-                    <img src="./_assets/cruz-02.svg" alt="Cruz">
+                    <img src="./_assets/cruz-01.svg" alt="Cruz">
                 </div>
                 <div class="produto-titulo">kit KOVÁCS</div>
 
-                <img class="img-ebook"  id="img-ebook-04" src="./_assets/kit-04.png" />
+                <img class="img-ebook" id="img-ebook-04" src="./_assets/kit-04.png" />
                 <div class="produto-valor">R$75</div>
                 <div class="produto-complemento">Porto Alegre</div>
                 <div id="produto-valor-02" class="produto-valor">R$75 + frete</div>
                 <div id="produto-complemento-02" class="produto-complemento">outras regiões</div>
                 <div class="produto-botao">
-                    <p><a href="http://" target="_blank" rel="noopener noreferrer">COMPRE AGORA</a></p>
+                    <p><a href="https://www.catarse.me/rduvng" target="_blank" rel="noopener noreferrer">COMPRE
+                            AGORA</a></p>
                 </div>
             </div>
         </div>
@@ -193,31 +201,35 @@
     </div>
 
 
-    <div class="links-ecommerce">
+    <div id="onde-comprar" class="links-ecommerce">
+        <div class="links-ecommerce-textura">
+        </div>
+
         <div class="links-ecommerce-text">
             <div class="links-ecommerce-title">Uma história que irá atravessar um século.</div>
             <div class="links-ecommerce-subtitle">Reserve sua cópia agora e faça parte dessa jornada.</div>
         </div>
 
         <div class="links-container">
-            <a href="#" class="button_ecommerce">
+            <a href="https://www.amazon.com.br/Relatos-um-Vampiro-na-Guerra-ebook/dp/B0D1LC8STG/ref=sr_1_1?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3G5NNER48W4QE&dib=eyJ2IjoiMSJ9.O6NOoZJbXXRT2r5PnwTXdvzD-u0bQh4XZcjm-GrRXJEPW1PoItxUb5P2wmlY7dVNv5K_86IH2A1xXLXq7HKwm-eamNukd7CvGOSg1s4qIWQrgqGnth3KqW6wPR57U6PAYgbrxwfoqdjiX-K1oGNi_z7NKkrYr26cslvbP9MZF6ZVbcOtZjzJFkVArOEUxz0bC_1BwJZ9bvbKuEAZvQX94fw6HSlNuEwiRVxB76h71O4.3mZeE0Jeswmdkbd5fKP6dn0hC8vy40EIHgY0tgJCO9Q&dib_tag=se&keywords=Relatos+de+um+Vampiro+na+Guerra&qid=1714523437&s=books&sprefix=%2Cstripbooks%2C216&sr=1-1"
+                target="_blank" class="button_ecommerce">
                 <p id="button_amazon_ebook" class="button_ecommerce-text">AMAZON - EBOOK</p>
             </a>
 
-            <a href="#" class="button_ecommerce">
+            <a href="https://www.amazon.com.br/dp/6500988353?ref=myi_title_dp" target="_blank" class="button_ecommerce">
                 <p class="button_ecommerce-text">AMAZON - CAPA DURA</p>
             </a>
 
-            <a href="#" class="button_ecommerce">
+            <a href="https://shopee.com.br/product/332636394/18499247830/" target="_blank" class="button_ecommerce">
                 <p class="button_ecommerce-text">SHOPPE</p>
             </a>
         </div>
 
-        <img class="ebook1" src="./_assets/ebook-1.png" alt="Ebook">
+        <img class="ebook1" src="./_assets/red_cross2.png" alt="Ebook">
 
     </div>
 
-    <div class="link-direto">
+    <div id="fale-comigo" class="link-direto">
         <div class="link-direto-group">
             <div class="link-direto-description">
                 <span class="highlight">Para comprar o livro com preço mais acessível (sem tarifas) me chame no
@@ -231,8 +243,8 @@
 
                 <span>Neste modo, o valor é direcionado inteiramente à autora, sem ter parte cortada por taxas de
                     plataforma de vendas.</span>
-                    
-                <a href="#" class="link-direto-button">
+
+                <a href="https://www.instagram.com/rduvng/" target="_blank" class="link-direto-button">
                     <p class="link-direto-button-text">Reserve o Seu Livro Comigo</p>
                 </a>
             </div>
@@ -245,16 +257,87 @@
         </div>
     </div>
 
+    <div class="spotify-playlist">
+        <p class="text-playlist">Entre no Mood</p>
+        <div class="playlist-grid">
+            <iframe style="border-radius:12px"
+                src="https://open.spotify.com/embed/playlist/1rIllGWmBAdBDtMbsom9wU?utm_source=generator" width="300"
+                height="352" frameBorder="0" allowfullscreen=""
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"></iframe>
+            <iframe style="border-radius:12px"
+                src="https://open.spotify.com/embed/playlist/3RXP1GHeziPq7uXIJU1iRr?utm_source=generator" width="300"
+                height="352" frameBorder="0" allowfullscreen=""
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"></iframe>
+            <iframe style="border-radius:12px"
+                src="https://open.spotify.com/embed/playlist/5ZyTCVn4qWo0U8hSAEEGUB?utm_source=generator" width="300"
+                height="352" frameBorder="0" allowfullscreen=""
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"></iframe>
+        </div>
+        <div class="playlist-texture">
+        </div>
+    </div>
+
+    <div class="form-container">
+        <div class="form-bg">
+            <p>Para dúvidas ou contato, encaminhe sua mensagem</p>
+            <form id="contact-form">
+                <div class="form-group">
+                    <div id="name">
+                        <label for="name">Nome</label>
+                        <input type="text" name="name" id="name" />
+                    </div>
+                    <div id="mensagem">
+                        <label for="mensagem">Mensagem</label>
+                        <input type="text" name="mensagem" id="mensagem" maxlength="300" />
+                    </div>
+
+                    <button type="submit" class="button-form">Enviar</button>
+                </div>
+            </form>
+        </div>
+        <script>
+            document.getElementById('contact-form').addEventListener('submit', function (e) {
+                e.preventDefault();
+
+                const name = document.getElementById('name').querySelector('input').value;
+                const mensagem = document.getElementById('mensagem').querySelector('input').value;
+
+                const phoneNumber = '5551992626012';
+                const text = `Nome: ${name}%0AMensagem: ${mensagem}`;
+
+                const whatsappUrl = `https://wa.me/${phoneNumber}?text=${text}`;
+
+                window.open(whatsappUrl, '_blank');
+            });
+        </script>
+    </div>
+
     <div class="footer">
         <div class="footer-title">Relatos de um Vampiro na Guerra</div>
         <div class="social-icons">
-            <img class="icon" src="./_assets/icon-goodreads.png" alt="Goodreads">
-            <img class="icon" src="./_assets/instagram-icon.svg" alt="Instagram">
-            <img class="icon" src="./_assets/icon-skoob.png" alt="Skoob">
+            <a href="https://www.goodreads.com/book/show/211226924-relatos-de-um-vampiro-na-guerra" target="_blank">
+                <img class="icon" src="./_assets/icon-goodreads.png" alt="Goodreads">
+            </a>
+
+            <a href="https://www.instagram.com/rduvng/" target="_blank">
+                <img class="icon" src="./_assets/instagram-icon.svg" alt="Instagram">
+            </a>
+
+            <a href="https://www.skoob.com.br/relatos-de-um-vampiro-na-guerra-122450332ed122451356.html" target="_blank">
+                <img class="icon" src="./_assets/icon-skoob.png" alt="Skoob">
+            </a>
         </div>
-        <img class="icon-catarse" src="./_assets/icon-catarse.png" alt="Catarse">
-        <div class="footer-credit">Site desenvolvido por Leonardo Boeira Maciel</div>
+        <a href="https://www.catarse.me/rduvng" target="_blank" rel="noopener noreferrer">
+            <img class="icon-catarse" src="./_assets/icon-catarse.png" alt="Catarse">
+        </a>
+
+        <a href="https://www.linkedin.com/in/leonardo-boeira-maciel/" target="_blank" rel="noopener noreferrer">
+            <div class="footer-credit">Site desenvolvido por Leonardo Boeira Maciel</div>
+        </a>
     </div>
 
-
+    <script src="./_scripts/nav-link.js"></script>
 </body>
