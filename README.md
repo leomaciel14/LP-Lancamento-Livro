@@ -1,5 +1,5 @@
 <div style="display: flex; justify-content: center; align-items: center;">
-  <a href="https://i.ibb.co/pZvhq8b/capa-2.jpg" title="Capa">
+  <a href="https://lp-lancamento-livro.vercel.app/" title="Capa">
     <img src="https://i.ibb.co/pZvhq8b/capa-2.jpg" alt="Capa" />
   </a>
 </div>
